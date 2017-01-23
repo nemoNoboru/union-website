@@ -2,14 +2,14 @@ var app = angular.module('app',['ngRoute']);
 
 app.config(function ($routeProvider) {
   $routeProvider
+  .when('/',{
+    templateUrl: 'assets/fragments/name/name.html'
+  })
   .when('/name',{
     templateUrl: 'assets/fragments/name/name.html'
   })
   .when('/email',{
     templateUrl: 'assets/fragments/email/email.html'
-  })
-  .when('/',{
-    templateUrl: 'assets/fragments/typeSelector/typeSelector.html'
   })
   .when('/description',{
     templateUrl: 'assets/fragments/description/description.html'
@@ -22,6 +22,9 @@ app.config(function ($routeProvider) {
   })
   .when('/capability',{
     templateUrl: 'assets/fragments/capabilities/capabilities.html'
+  })
+  .when('/type',{
+    templateUrl: 'assets/fragments/typeSelector/typeSelector.html'
   })
   .when('/budget',{
     templateUrl: 'assets/fragments/budget/budget.html'

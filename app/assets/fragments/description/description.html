@@ -1,8 +1,11 @@
 <div ng-controller='descriptionCtrl as $ctrl'>
-  <h2> Escriba una descripcion de su proyecto </h2>
+  <h2> Describe tu proyecto para nosotros </h2>
+  <h3> Cuéntanos para qué es este proyecto, incluyendo cualquier dato
+    adicional que consideres necesario para que entendamos la naturaleza de tus
+    necesidades y podamos adecuar nuestra solución en relación a ello </h3>
   <div class="field">
-    <textarea ng-model='viewer.description'/>
+    <textarea onfocus="this.value=''" ng-model='viewer.description'/>
   </div>
   <br/>
-  <a href="#" class="button fit">Siguiente</a>
+  <a href="#/pages" class="button fit">Siguiente</a>
 </div>

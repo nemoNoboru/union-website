@@ -1,11 +1,11 @@
 <div ng-controller='styleCtrl as $ctrl'>
-  <h2> Escriba el estilo de su proyecto </h2>
-  <h3> Puede incluir colores, objetos que deben de aparecer en el proyecto,
-    estado de animo que pretende expresar, si es informal o formal, si se trata de
-    un proyecto academico... </h3>
+  <h2> Háblanos del estilo de tu proyecto </h2>
+  <h3> Puedes incluir colores, objetos que deben de aparecer en el proyecto,
+    sensaciones que pretende transmitir, si es informal o formal, si se trata de
+    un proyecto académico... </h3>
   <div class="field">
-    <textarea ng-model='viewer.style'/>
+    <textarea onfocus="this.value=''" ng-model='viewer.style'/>
   </div>
   <br/>
-  <a href="#" class="button fit">Siguiente</a>
+  <a href="#capability" class="button fit">Siguiente</a>
 </div>

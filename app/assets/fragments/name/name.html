@@ -1,8 +1,8 @@
 <div ng-controller='nameCtrl as $ctrl'>
   <h2> Escriba su nombre </h2>
   <div class="field">
-    <textarea ng-model='viewer.name'/>
+    <textarea onfocus="this.value=''" ng-model='viewer.name'/>
   </div>
   <br/>
-  <a href="#" class="button fit">Siguiente</a>
+  <a href="#/email" class="button fit">Siguiente</a>
 </div>

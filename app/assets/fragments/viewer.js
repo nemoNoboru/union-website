@@ -1,11 +1,11 @@
 app.service('viewer',function () {
+  this.name = '...'
+  this.email = '...'
   this.type = '...'
   this.pages = '...'
   this.description = '...'
   this.style = '...'
   this.capability = '...'
-  this.name = '...'
-  this.email = '...'
   this.budget = 'Burrada de'
 })
 
