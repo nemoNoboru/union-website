@@ -8,4 +8,7 @@ app.controller('typeCtrl',['$scope','viewer',function ($scope,viewer) {
   $scope.full = function () {
     viewer.type = 'aplicacion web y movil'
   }
+  $scope.fulldesktop = function () {
+    viewer.type = 'aplicacion web , movil y escritorio'
+  }
 }])

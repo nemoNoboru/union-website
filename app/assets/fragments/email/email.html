@@ -1,0 +1,15 @@
+<div ng-controller='emailCtrl as $ctrl'>
+  <h2> Escriba su email. </h2>
+  <h3> Tenga en cuenta que este sera el email usado para contactar con usted. </h3>
+  <div class="field">
+    <label for="email">Email</label>
+    <input type='text' ng-change='check()' ng-model='email1'/>
+  </div>
+  <div class="field">
+    <label for="email">Verifique el email</label>
+    <input type='text' ng-change='check()' ng-model='email2'/>
+  </div>
+  <p>{{error}}</p>
+  <br/>
+  <a href="#" class="button fit">Siguiente</a>
+</div>

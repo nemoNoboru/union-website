@@ -125,14 +125,21 @@
 						<div class="image">
 							<div class="wrapper style1">
 								<div class="inner" ng-controller='viewerCtrl'>
-									<h3> Necesito una <a href='#/'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a><br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
+									<h3> Hola, soy <a href='#/name'>{{viewer.name}}</a> y mi email es <a href='#/email'>{{viewer.email}}</a>.<br/>
+										Necesito una <a href='#/'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a>
+										<br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
 										<br/>Me gustaria que tuviera un estilo <a href='#/style'>{{viewer.style}}</a>.
-
+										<br/>El proyecto <a href="#/capability">{{viewer.capability}}</a>.
+										<br/>
+										Podria pagar hasta {{viewer.budget}} euros</a>.
 									</h3>
 								</div>
 							</div>
 						</div>
-						<div class="content" ng-view>
+						<div class="content">
+							<div ng-view>
+							</div>
+							<p>* las opciones estan ordenadas las mas baratas arriba y las mas caras abajo.</p>
 						</div>
 					</section>
 
@@ -165,6 +172,10 @@
 			<script src="assets/fragments/pages/pages.js"></script>
 			<script src="assets/fragments/description/description.js"></script>
 			<script src="assets/fragments/style/style.js"></script>
+			<script src="assets/fragments/capabilities/capabilities.js"></script>
+			<script src="assets/fragments/name/name.js"></script>
+			<script src="assets/fragments/email/email.js"></script>
+			<script src="assets/fragments/budget/budget.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
