@@ -26,7 +26,7 @@ app.config(function ($routeProvider) {
   .when('/type',{
     templateUrl: 'assets/fragments/typeSelector/typeSelector.html'
   })
-  .when('/budget',{
-    templateUrl: 'assets/fragments/budget/budget.html'
+  .when('/send',{
+    templateUrl: 'assets/fragments/send/send.html'
   })
 })

@@ -1,0 +1,14 @@
+<div ng-controller='sendCtrl as $ctrl'>
+  <h2> {{viewer.name}}, Comprueba que tus datos son correctos </h2>
+  <h3> Hola, soy <a href='#/name'>{{viewer.name}}</a> y mi email es <a href='#/email'>{{viewer.email}}</a>.<br/>
+    Necesito una <a href='#/type'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a>
+    <br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
+    <br/>Me gustaria que tuviera un estilo <a href='#/style'>{{viewer.style}}</a>.
+    <br/>El proyecto <a href="#/capability">{{viewer.capability}}</a>.
+    <br/>
+  </h3>
+  <br/>
+  <div class="wrapper align-center">
+    <a href="#" class="button big wide">Enviar a revo</a>
+  </div>
+</div>
