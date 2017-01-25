@@ -140,16 +140,15 @@
 
 				<!-- Seven -->
 					<section id='presupuesto' class="spotlight fullscreen style1 orient-center image-position-right onscroll-image-fade-in onscroll-content-fade-right">
-						<div class="image not-small">
+						<div class="image not-small" ng-controller='viewerCtrl' ng-hide='viewer.show'>
 							<div class="wrapper style1">
-								<div class="inner" ng-controller='viewerCtrl'>
-									<h3> Hola, soy <a href='#/name'>{{viewer.name}}</a> y mi email es <a href='#/email'>{{viewer.email}}</a>.<br/>
+								<div class="inner">
+									<h3 class='presutext'> Hola, soy <a href='#/name'>{{viewer.name}}</a> y mi email es <a href='#/email'>{{viewer.email}}</a>.<br/>
 										Necesito una <a href='#/type'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a>
 										<br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
 										<br/>Me gustaria que tuviera un estilo <a href='#/style'>{{viewer.style}}</a>.
 										<br/>El proyecto <a href="#/capability">{{viewer.capability}}</a>.
 										<br/>
-										Podria pagar hasta {{viewer.budget}} euros</a>.
 									</h3>
 								</div>
 							</div>
@@ -187,6 +186,7 @@
 			<script src="assets/js/skel-layout.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
 			<script src="assets/fragments/router.js"></script>
 			<script src="assets/fragments/viewer.js"></script>
 			<script src="assets/fragments/typeSelector/typeSelector.js"></script>

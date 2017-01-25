@@ -1,15 +1,16 @@
 <div ng-controller='pageCtrl as $ctrl'>
-  <h2> Cuantas paginas diferentes tendra tu web? </h2>
-  <div ng-click='unknown()' onclick="location.href='#/style'" class="box btn">
+  <h2>{{viewer.name}}, cuantas paginas diferentes tendra tu web? </h2>
+    <h3>Esto nos dara informacion sobre como es de largo su proyecto</h3>
+  <div ng-click='unknown()' class="box btn">
     No lo se.
   </div>
-  <div ng-click='simple()' onclick="location.href='#/style'" class="box btn">
+  <div ng-click='simple()' class="box btn">
     1-3 paginas
   </div>
-  <div ng-click='medium()' onclick="location.href='#/style'" class="box btn">
+  <div ng-click='medium()' class="box btn">
     3-5 paginas
   </div>
-  <div ng-click='full()' onclick="location.href='#/style'" class="box btn">
+  <div ng-click='full()' class="box btn">
     5-7+ paginas
   </div>
   <br/>

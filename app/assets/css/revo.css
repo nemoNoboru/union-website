@@ -28,3 +28,30 @@ progress-bar::after{
 .bar {
   padding-top: 0.5em;
 }
+
+.presutext a {
+  color: #47D3E5 !important;
+}
+
+.ng-enter {
+  -moz-transition: opacity 0.75s ease-in-out;
+  -webkit-transition: opacity 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+div.image:nth-child(1) {
+  transition: all 0.75s ease-in-out;
+  opacity: 1;
+}
+
+div.image:nth-child(1).ng-hide {
+  transform: translateX(-100%);
+  opacity: 0;
+}

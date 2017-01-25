@@ -1,4 +1,6 @@
 app.controller('capCtrl',['$scope','viewer',function ($scope,viewer) {
+  $scope.viewer = viewer;
+  viewer.show = false
   $scope.static = function () {
     viewer.capability = 'no necesita ningun anadido'
   }
