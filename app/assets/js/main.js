@@ -29,6 +29,13 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
+
+			  $("img").hisrc();
+			  $("img+img").hisrc({
+			    useTransparentGif: true,
+			    speedTestUri: '/bower_components/hisrc/50K.jpg',
+			  });
+
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
