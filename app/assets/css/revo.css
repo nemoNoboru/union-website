@@ -29,10 +29,15 @@ progress-bar::after{
   padding-top: 0.5em;
 }
 
+.presutext a.presuCompletado {
+  color: #04997D !important;
+}
+
 
 .presutext a.presuActivo {
   color: #47D3E5 !important;
 }
+
 
 
 

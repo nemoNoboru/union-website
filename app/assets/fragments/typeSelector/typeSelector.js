@@ -1,6 +1,7 @@
 app.controller('typeCtrl',['$scope','viewer',function ($scope,viewer) {
   $scope.viewer = viewer
   viewer.show = false
+  viewer.active = 3
   $scope.static = function () {
     viewer.type = 'web estatica'
   }

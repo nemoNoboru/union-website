@@ -159,11 +159,11 @@
 							<div class="wrapper style1">
 								<div class="inner">
 									<h2>Pídenos un presupuesto; fácil y rápido</h2>
-									<h3 class='presutext'> Hola, soy <a ng-class="{ 'presuActivo' : viewer.active==1 }" href='#/name'>{{viewer.name}}</a> y mi email es <a ng-class="{ 'presuActivo' : viewer.active==2 }" href='#/email'>{{viewer.email}}</a>.<br/>
-										Necesito una <a href='#/type'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a>
-										<br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
-										<br/>Me gustaria que tuviera un estilo <a href='#/style'>{{viewer.style}}</a>.
-										<br/>El proyecto <a href="#/capability">{{viewer.capability}}</a>.
+									<h3 class='presutext'> Hola, soy <a ng-class="{ 'presuCompletado' : viewer.name!='...' , 'presuActivo' : viewer.active==1  }" href='#/name'>{{viewer.name}}</a> y mi email es <a ng-class="{ 'presuCompletado' : viewer.email!='...' , 'presuActivo' : viewer.active==2  }" href='#/email'>{{viewer.email}}</a>.<br/>
+										Necesito una <a ng-class="{ 'presuCompletado' : viewer.type!='...' , 'presuActivo' : viewer.active==3  }" href='#/type'>{{viewer.type}}</a> para <a ng-class="{ 'presuCompletado' : viewer.description!='...' , 'presuActivo' : viewer.active==4  }" href='#/description'>{{viewer.description}} </a>
+										<br/> la web tendra <a ng-class="{ 'presuCompletado' : viewer.pages!='...' , 'presuActivo' : viewer.active==5  }" href='#/pages'>{{viewer.pages}}</a> paginas.
+										<br/>Me gustaria que tuviera un estilo <a ng-class="{ 'presuCompletado' : viewer.style!='...' , 'presuActivo' : viewer.active==6  }" href='#/style'>{{viewer.style}}</a>.
+										<br/>El proyecto <a ng-class="{ 'presuCompletado' : viewer.capability!='...' , 'presuActivo' : viewer.active==7  }" href="#/capability">{{viewer.capability}}</a>.
 										<br/>
 									</h3>
 								</div>
