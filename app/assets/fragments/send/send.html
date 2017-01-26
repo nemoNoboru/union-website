@@ -8,7 +8,8 @@
     <br/>
   </h3>
   <br/>
+  <h3 class="error" ng-repeat='errors in errores'>{{errors}}</h3>
   <div class="wrapper align-center">
-    <a href="#" class="button big wide">Enviar a revo</a>
+    <a ng-click='send()' class="button big wide">Enviar a revo</a>
   </div>
 </div>

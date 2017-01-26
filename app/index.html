@@ -12,6 +12,21 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/revo.css" />
 
+		<!-- Firebase config -->
+		<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCe57_4huEIcR4uk5u-yvhdfPRw8tWq9Q0",
+		    authDomain: "revo-72de8.firebaseapp.com",
+		    databaseURL: "https://revo-72de8.firebaseio.com",
+		    storageBucket: "revo-72de8.appspot.com",
+		    messagingSenderId: "507111271266"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<!-- end of firebase config -->
+
 <script src="https://use.fontawesome.com/94c893f601.js"></script>
 
 
@@ -156,7 +171,6 @@
 						<div class="content">
 							<div ng-view>
 							</div>
-							<p>* las opciones estan ordenadas por precio de manera ascendente.</p>
 						</div>
 					</section>
 
@@ -187,6 +201,7 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+			<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 			<script src="bower_components/hisrc/hisrc.js"></script>
 			<script src="assets/fragments/router.js"></script>
 			<script src="assets/fragments/viewer.js"></script>
@@ -199,6 +214,7 @@
 			<script src="assets/fragments/email/email.js"></script>
 			<script src="assets/fragments/send/send.js"></script>
 			<script src="assets/fragments/progressBar/progressBar.js"></script>
+			<script src="assets/fragments/end/end.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
