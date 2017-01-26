@@ -29,9 +29,12 @@ progress-bar::after{
   padding-top: 0.5em;
 }
 
-.presutext a {
+
+.presutext a.presuActivo {
   color: #47D3E5 !important;
 }
+
+
 
 .ng-enter {
   -moz-transition: opacity 0.75s ease-in-out;

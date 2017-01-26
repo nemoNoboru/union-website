@@ -90,7 +90,7 @@
 							<p> Que te has quedado sin internet? no hay problema! podras usar la aplicacion como si estuvieras conectado. Todos los datos se sincronizaran cuando vuelvas a tener red.</p>
 							<p>Ademas, tu proyecto estará seguro en la nube y las tasas de mantenimiento serán menores.</p>
 							<ul class="actions vertical">
-								<li><a href="#presupuesto" class="button smooth-scroll-middle">¡Hecho!</a></li>
+								<li><a href="#landing" class="button smooth-scroll-middle">¡Hecho!</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -143,7 +143,8 @@
 						<div class="image not-small" ng-controller='viewerCtrl' ng-hide='viewer.show'>
 							<div class="wrapper style1">
 								<div class="inner">
-									<h3 class='presutext'> Hola, soy <a href='#/name'>{{viewer.name}}</a> y mi email es <a href='#/email'>{{viewer.email}}</a>.<br/>
+									<h2>Pídenos un presupuesto; fácil y rápido</h2>
+									<h3 class='presutext'> Hola, soy <a ng-class="{ 'presuActivo' : viewer.active==1 }" href='#/name'>{{viewer.name}}</a> y mi email es <a ng-class="{ 'presuActivo' : viewer.active==2 }" href='#/email'>{{viewer.email}}</a>.<br/>
 										Necesito una <a href='#/type'>{{viewer.type}}</a> para <a href='#/description'>{{viewer.description}} </a>
 										<br/> la web tendra <a href='#/pages'>{{viewer.pages}}</a> paginas.
 										<br/>Me gustaria que tuviera un estilo <a href='#/style'>{{viewer.style}}</a>.

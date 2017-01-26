@@ -6,7 +6,7 @@ app.service('viewer',function () {
   this.description = '...'
   this.style = '...'
   this.capability = '...'
-  this.budget = 'Burrada de'
+  this.active=1
 })
 
 app.controller('viewerCtrl',['$scope','viewer',function ($scope,viewer) {
