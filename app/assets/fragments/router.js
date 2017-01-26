@@ -1,4 +1,4 @@
-var app = angular.module('app',['ngRoute']);
+var app = angular.module('app',['ngRoute','ngAnimate','firebase']);
 
 app.config(function ($routeProvider) {
   $routeProvider
@@ -26,7 +26,10 @@ app.config(function ($routeProvider) {
   .when('/type',{
     templateUrl: 'assets/fragments/typeSelector/typeSelector.html'
   })
-  .when('/budget',{
-    templateUrl: 'assets/fragments/budget/budget.html'
+  .when('/send',{
+    templateUrl: 'assets/fragments/send/send.html'
+  })
+  .when('/end',{
+    templateUrl: 'assets/fragments/end/end.html'
   })
 })

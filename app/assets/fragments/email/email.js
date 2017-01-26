@@ -1,4 +1,7 @@
 app.controller('emailCtrl',['$scope','viewer',function ($scope,viewer) {
+  $scope.viewer = viewer
+  viewer.show = false
+  viewer.active = 2
   $scope.check = function () {
     if($scope.email1 === $scope.email2){
       if(validateEmail($scope.email1)){

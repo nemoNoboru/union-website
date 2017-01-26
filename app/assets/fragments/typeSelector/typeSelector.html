@@ -1,15 +1,19 @@
 <div ng-controller='typeCtrl as $ctrl'>
-  <h2> Defina su proyecto </h2>
-  <div ng-click='static()' onclick="location.href='#/description'" class="box btn">
+  <h2>{{viewer.name}}, define tu proyecto </h2>
+  <h3>Necesito una</h3>
+  <div ng-click='static()' class="box btn">
     Web para anunciar un producto o empresa
   </div>
-  <div ng-click='web()' onclick="location.href='#/description'" class="box btn">
+  <div ng-click='web()' class="box btn">
     Aplicacion web
   </div>
-  <div ng-click='full()' onclick="location.href='#/description'" class="box btn">
+  <div ng-click='full()' class="box btn">
     Aplicacion web + aplicacion movil
   </div>
-  <div ng-click='fulldesktop()' onclick="location.href='#/description'" class="box btn">
+  <div ng-click='fulldesktop()' class="box btn">
     Aplicacion web + aplicacion movil + aplicacion de escritorio
   </div>
+  <br/>
+    <progress-bar atras='email' siguiente='description' completed=3 todo=4></progress-bar>
+    <p>* las opciones estan ordenadas por precio de manera ascendente.</p>
 </div>

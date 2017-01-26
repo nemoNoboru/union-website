@@ -1,4 +1,7 @@
 app.controller('capCtrl',['$scope','viewer',function ($scope,viewer) {
+  $scope.viewer = viewer
+  viewer.show = false
+  viewer.active = 7
   $scope.static = function () {
     viewer.capability = 'no necesita ningun anadido'
   }

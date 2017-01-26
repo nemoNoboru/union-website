@@ -1,0 +1,15 @@
+<div ng-controller='sendCtrl as $ctrl'>
+  <h2> {{viewer.name}}, Comprueba que tus datos son correctos </h2>
+  <h3 class='presutext'> Hola, soy <a class='presuCompletado' href='#/name'>{{viewer.name}}</a> y mi E-mail es <a class='presuCompletado' href='#/email'>{{viewer.email}}</a>.<br/>
+    Necesito una <a class='presuCompletado' href='#/type'>{{viewer.type}}</a> para <a class='presuCompletado' href='#/description'>{{viewer.description}} </a>
+    <br/> la web tendra <a class='presuCompletado' href='#/pages'>{{viewer.pages}}</a> páginas.
+    <br/>Me gustaría que tuviera un estilo <a class='presuCompletado' href='#/style'>{{viewer.style}}</a>.
+    <br/>El proyecto <a class='presuCompletado' href="#/capability">{{viewer.capability}}</a>.
+    <br/>
+  </h3>
+  <br/>
+  <h3 class="error" ng-repeat='errors in errores'>{{errors}}</h3>
+  <div class="wrapper align-center">
+    <a ng-click='send()' class="button big wide">Enviar a revo</a>
+  </div>
+</div>

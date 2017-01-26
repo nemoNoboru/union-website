@@ -1,4 +1,7 @@
 app.controller('pageCtrl',['$scope','viewer',function ($scope,viewer) {
+  $scope.viewer = viewer
+  viewer.show = false
+  viewer.active = 5
   $scope.unknown = function () {
     viewer.pages = 'un numero indeterminado de'
   }
