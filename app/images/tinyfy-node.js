@@ -15,7 +15,7 @@ files.forEach(function (file) {
 })
 
 // tinify each image
-imageFiles.forEach( function(image) {
+imageFiles.forEach( fn(image) {
   console.log('minifying image...: '+image)
   var source = tinify.fromFile(image)
   var resized = source.resize({
