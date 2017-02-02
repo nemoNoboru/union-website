@@ -1,4 +1,4 @@
-app.controller('sendCtrl',['$scope','viewer','$firebaseArray','$location',function ($scope,viewer,$firebaseArray,$location) {
+app.controller('sendCtrl',['$scope','viewer','$firebaseArray','$location','$http',function ($scope,viewer,$firebaseArray,$location,$http) {
   $scope.viewer = viewer
   $scope.errores = []
   viewer.show = true
@@ -20,6 +20,16 @@ app.controller('sendCtrl',['$scope','viewer','$firebaseArray','$location',functi
       var ref = firebase.database().ref().child('presupuestos')
       var presupuestos = $firebaseArray(ref)
       presupuestos.$add(viewer)
+      //Envío de emails via post a web externa
+      var url = 'http://arcane-reef-37359.herokuapp.com/'
+      //Creación del objeto
+      var toPost = {
+        nombre: viewer.nombre,
+        email: viewer.email
+      }
+      //Posting porque angular
+      $http.post(url,toPost)
+      //Redirect
       $location.path('/end')
     }
   }
