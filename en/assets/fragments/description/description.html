@@ -1,0 +1,10 @@
+<div ng-controller='descriptionCtrl as $ctrl'>
+  <h2>{{viewer.name}}, make a light description for us </h2>
+  <h3> Tell us about your project. You can add what ever you think is relevant to explain the type and origin of your needs.
+    We will look for the better solution for you. </h3>
+  <div class="field">
+    <textarea onfocus="this.value=''" ng-model='viewer.description'/>
+  </div>
+  <br/>
+  <progress-bar atras='type' siguiente='pages' completed=4 todo=3></progress-bar>
+</div>

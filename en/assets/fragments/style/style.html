@@ -1,0 +1,10 @@
+<div ng-controller='styleCtrl as $ctrl'>
+  <h2> Tell us about the style of your project, {{viewer.name}}</h2>
+  <h3> You can put colour, objects that must appear in the project. Include also all the things you consider important
+    like if it will be formal or informal, or if it is an academy project, etc.</h3>
+  <div class="field">
+    <textarea onfocus="this.value=''" ng-model='viewer.style'/>
+  </div>
+  <br/>
+    <progress-bar atras='pages' siguiente='capability' completed=6 todo=1></progress-bar>
+</div>

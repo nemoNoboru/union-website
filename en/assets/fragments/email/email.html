@@ -1,0 +1,15 @@
+<div ng-controller='emailCtrl as $ctrl'>
+  <h2> {{viewer.name}}, write your E-mail. </h2>
+  <h3> This E-mail will be used to contact with you. </h3>
+  <div class="field">
+    <label for="email">E-mail</label>
+    <input type='text' ng-change='check()' ng-model='email1'/>
+  </div>
+  <div class="field">
+    <label for="email">Verify the E-mail</label>
+    <input type='text' ng-change='check()' ng-model='email2'/>
+  </div>
+  <p>{{error}}</p>
+  <br/>
+  <progress-bar atras='name' siguiente='type' completed=2 todo=5></progress-bar>
+</div>

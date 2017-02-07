@@ -1,0 +1,19 @@
+<div ng-controller='typeCtrl as $ctrl'>
+  <h2>{{viewer.name}}, define your project </h2>
+  <h3>I need a...</h3>
+  <div ng-click='static()' class="box btn">
+    Web page to announce a product or enterprise.
+  </div>
+  <div ng-click='web()' class="box btn">
+    Web application.
+  </div>
+  <div ng-click='full()' class="box btn">
+    Web application + mobile application.
+  </div>
+  <div ng-click='fulldesktop()' class="box btn">
+    Web application + mobile application + desktop application.
+  </div>
+  <br/>
+    <progress-bar atras='email' siguiente='description' completed=3 todo=4></progress-bar>
+    <p>* the options are in ascending order  by their price.</p>
+</div>

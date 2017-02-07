@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="4u 6u(small) align-left">
+    <a href="#/{{$ctrl.atras}}" class="align-left button wide">Back</a>
+  </div>
+
+  <div class="not-small bar 4u align-center">
+  <span class="icon fa-circle steps completed" ng-repeat='i in $ctrl.acompleted track by $index'/>
+  <span class="icon fa-circle-thin steps" ng-repeat='j in $ctrl.atodo track by $index'/>
+  </div>
+
+  <div class="4u 6u(small) align-right">
+    <a href="#/{{$ctrl.siguiente}}" class="button wide ">Next</a>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div ng-controller='pageCtrl as $ctrl'>
+  <h2>{{viewer.name}}, how many pages will have your web page? </h2>
+    <h3> This will tell us how long your project is.</h3>
+  <div ng-click='unknown()' class="box btn">
+    I have no idea.
+  </div>
+  <div ng-click='simple()' class="box btn">
+    1-3 pages.
+  </div>
+  <div ng-click='medium()' class="box btn">
+    3-5 pages.
+  </div>
+  <div ng-click='full()' class="box btn">
+    5-7+ pages.
+  </div>
+  <br/>
+  <progress-bar atras='description' siguiente='style' completed=5 todo=2></progress-bar>
+  <p>* the options are in ascending order  by their price.</p>
+</div>

@@ -1,0 +1,15 @@
+<div ng-controller='capCtrl as $ctrl'>
+  <h2> Your project, {{viewer.name}} , will be able to </h2>
+  <div ng-click='static()' class="box btn">
+    Not being modified when the project is ended.
+  </div>
+  <div ng-click='dynamicdb()' class="box btn">
+    It needs to add, modify and remove text such as comments, status, messages, ...
+  </div>
+  <div ng-click='full()' class="box btn">
+    It needs to add, modify and remove text such as comments, status, messages and it also needs to manage
+    media content like images, docs or videos.
+  </div>
+  <progress-bar atras='style' siguiente='send' completed=7 todo=0></progress-bar>
+  <p>* the options are in ascending order  by their price.</p>
+</div>
